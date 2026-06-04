@@ -95,17 +95,17 @@
             // ------------------------------------------------------------------------------------------------------------
             // |          |        |        |       |       |       |                  |        |        |        |       |       |       |
             // |          | LOCK   |        |       |       |       |                  |        |        |        |       |       |       |
-            // |          | APPSW  | SHOT_R | SHOT_F| SHOT_M| SPOTLT|                  | DESK<- | EXPOSE | MISSION| DESK->|       |       |
+            // |          | APPSW  | SHOTTR | SHOT_F| SHOT_M| SPOTLT|                  | DESK<- | EXPOSE | MISSION| DESK->|       |       |
             // |          |        |        |       |       |       |       |  |       |        |        |        |       |       |       |
             //                              |       |       |       |       |  |       |        |        |        |
             //
-            // APPSW = Cmd+Tab   SHOT_R = Cmd+Shift+4 (region)   SHOT_F = Cmd+Shift+3 (full)
-            // SHOT_M = Cmd+Shift+5 (menu)   SPOTLT = Cmd+Space   LOCK = Ctrl+Cmd+Q
+            // APPSW = Cmd+Tab   SHOTTR = Cmd+Shift+2 (Shottr area)   SHOT_F = Cmd+Shift+3 (native full)
+            // SHOT_M = Cmd+Shift+5 (native menu)   SPOTLT = Cmd+Space   LOCK = Ctrl+Cmd+Q
             // DESK<-/-> = Ctrl+Left/Right (switch desktops)   MISSION = Ctrl+Up   EXPOSE = Ctrl+Down
             bindings = <
     &trans   &trans          &trans            &trans            &trans            &trans                            &trans          &trans          &trans        &trans           &trans   &trans
     &trans   &kp LC(LG(Q))   &trans            &trans            &trans            &trans                            &trans          &trans          &trans        &trans           &trans   &trans
-    &trans   &kp LG(TAB)     &kp LG(LS(N4))    &kp LG(LS(N3))    &kp LG(LS(N5))    &kp LG(SPACE)                     &kp LC(LEFT)    &kp LC(DOWN)    &kp LC(UP)    &kp LC(RIGHT)    &trans   &trans
+    &trans   &kp LG(TAB)     &kp LG(LS(N2))    &kp LG(LS(N3))    &kp LG(LS(N5))    &kp LG(SPACE)                     &kp LC(LEFT)    &kp LC(DOWN)    &kp LC(UP)    &kp LC(RIGHT)    &trans   &trans
     &trans   &trans          &trans            &trans            &trans            &trans    &trans      &trans      &trans          &trans          &trans        &trans           &trans   &trans
                                                &trans            &trans            &trans    &trans      &trans      &trans          &trans          &trans
             >;
